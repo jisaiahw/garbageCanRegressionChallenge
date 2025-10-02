@@ -122,3 +122,16 @@ A concerned parent worried about their child's social media usage would likely b
 
 # 7. Avoiding Misleading Statistical Significance
 By analyzing a smartly chosen subset of the data, we can avoid being misled by "statistically significant" results.
+```{r}
+# Low stress subset
+low_subset <- observDF %>% filter(Stress <= 6)
+model_low <- lm(Anxiety ~ StressSurvey + Time, data = low_subset)
+tidy(model_low)
+
+# High stress subset
+high_subset <- observDF %>% filter(Stress > 6)
+model_high <- lm(Anxiety ~ StressSurvey + Time, data = high_subset)
+tidy(model_high)
+```
+I chose to split the data into low and high stress subsets because the StressSurvey results are triple the true Stress results until StressSurvey exceeds 6, in addition to 6 being half of the maximum stress level of 12. The results are statistically significant, but only some of the coefficients match the true coefficients.
+

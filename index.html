@@ -252,6 +252,31 @@ Warning in summary.lm(x): essentially perfect fit: summary may be unreliable</co
 <section id="avoiding-misleading-statistical-significance" class="level1">
 <h1>7. Avoiding Misleading Statistical Significance</h1>
 <p>By analyzing a smartly chosen subset of the data, we can avoid being misled by “statistically significant” results.</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in summary.lm(x): essentially perfect fit: summary may be unreliable</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 5
+  term         estimate std.error statistic  p.value
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)  1.48e-16  6.20e-17   2.39e 0 5.43e- 2
+2 StressSurvey 3.33e- 1  2.14e-17   1.56e16 4.66e-96
+3 Time         1.00e- 1  8.32e-17   1.20e15 2.24e-89</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in summary.lm(x): essentially perfect fit: summary may be unreliable</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 5
+  term         estimate std.error statistic  p.value
+  &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 (Intercept)    -4.00   8.02e-15  -4.99e14 1.77e-44
+2 StressSurvey    1.33   3.09e-16   4.31e15 2.75e-47
+3 Time            0.100  5.17e-15   1.94e13 3.04e-40</code></pre>
+</div>
+</div>
+<p>I chose to split the data into low and high stress subsets because the StressSurvey results are triple the true Stress results until StressSurvey exceeds 6.</p>
 </section>
 
 </main>
