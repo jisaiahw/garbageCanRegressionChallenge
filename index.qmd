@@ -116,8 +116,13 @@ glance(model4)
 Both models have high R² values, but only the model using Stress (not StressSurvey) gives coefficients that match the true causal process. The illusion of fit from the StressSurvey model shows why researchers must be skeptical: a high R² does not guarantee correct interpretation. This is the essence of the “garbage can regression” problem.
 
 # 6. Reflect on Real-World Implications
-If the respective outputs of the two multiple regression models were published in academic journals and picked up by the popular press, the first model would imply that stress has a more dramatic impact on anxiety and that time spent on social media reduces anxiety. The second model suggests that both stress and time increase anxiety.
-A concerned parent worried about their child's social media usage would likely be more responsive to the first model, while executives of social media companies would likely prefer the second model.
+If the respective outputs of the two multiple regression models were published in academic journals and picked up by the popular press, the headlines would be:
+
+**Model 3 (StressSurvey + Time):** *"New Study: Social Media Use Dramatically Reduces Anxiety"*
+
+**Model 4 (Stress + Time):** *"Research Confirms: Social Media Time Increases Anxiety Levels"*
+
+The first model would imply that stress has a more dramatic impact on anxiety and that time spent on social media reduces anxiety. The second model suggests that both stress and time increase anxiety. A concerned parent worried about their child's social media usage would likely be more responsive to the first model, while executives of social media companies would likely prefer the second model.
 
 # 7. Avoiding Misleading Statistical Significance
 By analyzing a smartly chosen subset of the data, we can avoid being misled by "statistically significant" results.
