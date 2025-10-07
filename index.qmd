@@ -99,7 +99,7 @@ The scatterplot shows Anxiety increasing with Time. The regression line appears 
 model3 <- lm(Anxiety ~ StressSurvey + Time, data = observDF)
 tidy(model3)
 ```
-The estimated coefficients of StressSurvey and time are 1.43 and -2.78, respectively. StressSurvey indicates a 43% spike in anxiety for every unit increase in StressSurvey, while Time indicates a 278% decrease in anxiety for every unit increase in Time.
+The estimated coefficients of StressSurvey and time are 1.43 and -2.78, respectively. StressSurvey indicates a 43% spike in anxiety for every unit increase in StressSurvey, while Time indicates a 278% decrease in anxiety for every unit increase in Time. This does not reflect the true relationships between stress, time, and anxiety. Time does have a positive correlation with anxiety, but not by that much. Time is not supposed to have a negative correlation with anxiety, but this model suggests that it does.
 
 # 4B. Multiple Regression Analysis
 ```{r}
